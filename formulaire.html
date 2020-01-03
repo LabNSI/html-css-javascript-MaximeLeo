@@ -4,11 +4,12 @@
   <meta charset="utf-8">
 
   <!-- Compléter le titre de la page -->
-  <title>Met un titre ici</title>
+  <title>Mes spécialités en terminale</title>
   <!-- ***************************** -->
 
   <!-- Faire l'inclusion du css et du script js -->
-
+	<script src="script.js"></script>
+	<link href="style.css" rel="stylesheet" type="text/css" />
 
   <!-- ***************************** -->
 </head>
@@ -20,10 +21,10 @@
   <section id="formulary">
 
   <!-- Affecter au formulaire l'identité "terminale" -->
-  <form  action="#" method="get">  <br/>
+  <form id="terminale"  action="#" method="get">  <br/>
   <!-- ***************************** -->
       <!-- Affecter à l'article l'identité "identity" et la classe "choix" -->
-      <article>
+      <article id="identity">
       <!-- ***************************** -->
         <!-- Ecrire le code du formulaire de saisie de l'Identité
             * Titre de niveau 2 : "Identité :"
@@ -33,10 +34,16 @@
             * paragraphe : "Nom"
             * champ de saisie de texte d’une ligne avec comme nom "nom" -->
         <!-- ***************************** -->
+		<h2> Identité </h2>
+		<p> Indiquez vos nom et prenom </p>
+		<p> Prénom </p>
+		<input type="text" id="prenom">
+		<p> Nom </p>
+		<input type="text" id="nom">
       </article>
 
       <!-- Affecter à l'article l'identité "classe" et la classe "choix" -->
-      <article>
+      <article id="classe" class="choix">
       <!-- ***************************** -->
         <!-- Ecrire le code du formulaire de choix de la classe
             * Titre de niveau 2 : "Votre classe :"
@@ -45,6 +52,11 @@
             * paragraphe : bouton radio avec comme nom "classe" et pour valeur "1G3"
             * paragraphe : bouton radio avec comme nom "classe" et pour valeur "1G5" -->
         <!-- ***************************** -->
+		<h2> Votre classe : </h2>
+		<p> En quelle classe êtes vous ? </p>
+		<p>  <Input type = "radio" name="classe" value="1G2"> 1G2 </p>
+		<p>  <Input type = "radio" name="classe" value="1G3"> 1G3 </p>
+		<p>  <Input type = "radio" name="classe" value="1G5"> 1G5 </p>
      </article>
 
      <!-- Affecter à l'article l'identité "speciality" et la classe "choix" -->
@@ -61,6 +73,18 @@
            * paragraphe : case à cocher avec comme nom "PHYSIQUE_CHIMIE" et pour valeur "PHYSIQUE-CHIMIE"
            * paragraphe : case à cocher avec comme nom "SC_ECONO_SOCIALES" et pour valeur "SC. ECONO.& SOCIALES" -->
        <!-- ***************************** -->
+       <h2> Les spécialités en terminale </h2>
+       <p> Choisissez vos deux spécialités </p>
+       <p>  <Input type = "radio" name="classe" value="ARTS_PLASTIQUES"> ARTS PLASTIQUES </p>
+       <p>  <Input type = "radio" name="classe" value="LITT_ANGLAIS"> LITT. ANGLAIS </p>
+       <p>  <Input type = "radio" name="classe" value="LITT_ESPAGNOL"> LITT. ESPAGNOL </p>
+       <p>  <Input type = "radio" name="classe" value="MATHEMATIQUES"> MATHEMATIQUES </p>
+       <p>  <Input type = "radio" name="classe" value="NUMERIQUE_SC_INFORM"> NUMERIQUE SC.INFORM </p>
+       <p>  <Input type = "radio" name="classe" value="PHYSIQUE_CHIMIE"> PHYSIQUE-CHIMIE </p>
+       <p>  <Input type = "radio" name="classe" value="SC_ECONO_SOCIALES"> SC. ECONO.& SOCIALES </p>
+
+
+
 
      </article>
 
